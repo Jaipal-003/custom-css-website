@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary-color: #3a0ca3;
+  --primary-color-hover: #2a0977;
+  --secondary-color: #f72585;
+  --light-color: #f8f8f8;
+  --primary-radius: 8px;
+  --primary-font: "Nunito", sans-serif;
+  --heading-color: #232323;
+  --para-color: #555;
+}
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+  width: 100%;
+}
+p {
+  margin-bottom: 16px;
+  color: var(--para-color);
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--primary-font);
+}
+
+/* For Header css */
+.header {
+  background-color: #fff;
+  padding: 16px 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.navbar-right-side {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar-brand {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--heading-color);
+  text-decoration: none;
+}
+.brand-logo-footer {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-nav {
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu-item .nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 12px;
+  line-height: 22px;
+  color: var(--heading-color);
+}
+.menu-item .nav-link:hover {
+  color: var(--primary-color);
+}
+/* For Header css end */
+/* For btn css */
+.btn-white:hover,
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn {
+  border: 1px solid var(--primary-color);
+  border-radius: var(--primary-radius);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-family: var(--primary-font);
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+}
+.btn-white {
+  border-color: #fff;
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.btn-white-outline {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.btn-white-outline:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+/* For btn css end*/
+.banner-section {
+  background-size: cover;
+  background-image: url("../images/banner2.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+}
+.care-section::before,
+.banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #050119;
+  opacity: 0.7;
+}
+.banner-info {
+  margin: 0 auto;
+  text-align: center;
+  width: 74%;
+}
+.banner-info p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 30px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+.banner-info h5 {
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.banner-info .btn:not(:last-child) {
+  margin-right: 10px !important;
+}
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.sub-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+.separator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 2px solid var(--primary-color);
+  margin: 6px 0 24px 0;
+  width: 63px;
+}
+.confidently-section,
+.about-section {
+  padding: 100px 0;
+}
+.confidently-section .data,
+.about-section .data {
+  display: flex;
+}
+
+.confidently-section .data .left,
+.confidently-section .data .right,
+.about-section .data .left,
+.about-section .data .right {
+  width: 50%;
+}
+.confidently-section .data .left img,
+.about-section .data .right img {
+  border-radius: var(--primary-radius);
+  max-width: 100%;
+}
+span.number {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 38px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+.features-section {
+  background-color: var(--light-color);
+  padding: 100px 0;
+}
+.features-section .features-row {
+  display: flex;
+}
+.features-row .features {
+  max-width: 33.33333%;
+  flex: 0 0 33.33333%;
+  display: flex;
+  gap: 15px;
+}
+.features .right h4 .link {
+  font-size: 28px;
+  line-height: 36px;
+  color: var(--heading-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+.features .right h4 {
+  margin-bottom: 16px;
+}
+
+/* care section */
+
+.care-section {
+  background-size: cover;
+  background-image: url("../images/banner3.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+}
+.care-section .left {
+  max-width: 600px;
+  width: 100%;
+}
+.care-section .title {
+  color: #fff;
+}
+.care-section p {
+  color: #fff;
+}
+/* Confidently Section */
+
+.confidently-section .data .left {
+  padding-right: 15px;
+}
+.confidently-section .data .right {
+  padding-left: 15px;
+}
+
+/* Footer section */
+.footer-section {
+  background-color: #0f1113;
+  padding: 60px 0;
+}
+.footer-section  .data{
+    display: flex;
+}
+.footer-section  .data h6{
+    font-size: 22px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.data .first,
+.data .fourth {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+.data .second,
+.data .third {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+.footer-menu{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-menu li a{
+    text-decoration: none;
+    color: var(--para-color);
+    font-size: 17px;
+    transition: all ease-in-out 0.3s;
+}
+.footer-menu li a:hover{
+    color: #fff;
+}
+.footer-menu li{
+    margin: 10px 0;
+}

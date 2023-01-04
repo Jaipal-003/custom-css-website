@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary-color: #3a0ca3;
+  --primary-color-hover: #2a0977;
+  --secondary-color: #f72585;
+  --light-color: #f8f8f8;
+  --primary-radius: 8px;
+  --primary-font: "Nunito", sans-serif;
+  --heading-color: #232323;
+  --para-color: #555;
+}
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+  width: 100%;
+}
+p {
+  margin-bottom: 16px;
+  color: var(--para-color);
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--primary-font);
+}
+
+/* For Header css */
+.header {
+  background-color: #fff;
+  padding: 16px 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.navbar-right-side {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar-brand {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--heading-color);
+  text-decoration: none;
+}
+.brand-logo-footer {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-nav {
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu-item .nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 12px;
+  line-height: 22px;
+  color: var(--heading-color);
+}
+.menu-item .nav-link:hover {
+  color: var(--primary-color);
+}
+/* For Header css end */
+/* For btn css */
+.btn-white:hover,
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn {
+  border: 1px solid var(--primary-color);
+  border-radius: var(--primary-radius);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-family: var(--primary-font);
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+}
+.btn-white {
+  border-color: #fff;
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.btn-white-outline {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.btn-white-outline:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+#heading{
+    color: white;
+    text-align: center;
+
+}
+h2{
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: "Poppins",sans-serif;
+    margin-top: 89px;
+    margin-bottom: 6rem;
+}
+#msg{
+    border: 1px solid var(--primary-color);
+    border-radius: var(--primary-radius);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-family: var(--primary-font);
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+}
+#inputx{
+    width: 31.3rem;
+    height: 126px;
+    padding: 0px 0px 0px 18px;
+    font-size: 16px;
+}
+#contactall{
+    padding: 1rem 0rem 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+}
+
+#footer{
+     border: 2px solid rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+     height: 21rem;
+     background-color: #111;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+}
+
+
+.info1{
+    font-size: 14px;
+    color: #f15d44;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.info2{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: "Poppins",sans-serif;
+}
+#footer2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 8rem;
+    position: relative;
+}
+#footer2 > img {
+    width: 80%;
+}
+
+#footer2 > div {
+    position: absolute;
+    left: 11rem;
+}
+#footer2 > div >h2{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+#footer2 > div >p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    margin: -77px 0px 12px 2px;
+}
+#email {
+    border: 1px solid red;
+    width: 19rem;
+    margin: 24px 1px 1px 2px;
+
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    margin: -2rem 0rem 0rem 42rem;
+}
+
+
+
+#email>button {
+    outline: none;
+    border: 1px solid #f61b55;
+    background-color: #f61b55;
+    transition: background-color 0.5s ease;
+    width: 2rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+#email>button:hover {
+    background-color: #fff;
+
+}
+
+#email>button:hover>svg {
+    fill: #000;
+
+}
+
+#email>button>svg {
+    fill: #fff;
+}
+
+#email>input {
+    outline: none;
+    border: none;
+    padding-left: 11px;
+}
+
+.roww{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2rem;
+}
+
+
+@media (max-width: 1000px) {
+    .right {
+       display: none;
+    }    
+}
